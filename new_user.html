@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Crear usuario</title>
+
+<style>
+body {background-color:navy;}
+h1 {text-align:center;
+	 color:white;
+	 }
+
+a {color:white;}
+</style>
+</head>
+
+<body>
+
+<header>
+	<nav>
+		<a href="index.html" style="margin-right:4px">Inicio</a>
+		<a href="new_user.html" style="margin-right:4px">Crear Usuario</a>
+	</nav>
+</header>
+
+<h1>Complete la información</h1>
+
+<form action="./asd.php" method="post">
+
+
+	<table border="0" align="center" >  
+		<tr>
+			<td  style="color:white;">Correo de usuario:</td>
+			<td>
+				<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="user" required><br>
+			</td>
+		</tr>
+		
+		<tr>
+			<td  style="color:white;">Contraseña:</td>
+			<td>
+				<input type="password" name="pass1" required><br>
+			</td>
+		</tr>
+		
+		<tr>
+			<td  style="color:white;">Repita contraseña:</td>
+			<td>
+				<input type="password" name="pass2" required><br>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<!-- <button type="submit" value="Submit">Aceptar</button> -->
+			</td>
+			<td align="center">
+				<button type="submit" value="Submit">Aceptar</button>
+				<button type="reset" value="Reset">Reset</button>				
+			</td>
+		</tr>
+	</table>
+
+
+</form>
+<!-- <script>window.location='index.html'</script> -->
+</body>
+
+
+</html>
